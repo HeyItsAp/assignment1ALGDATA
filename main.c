@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-void BestProfit(int numbers[], int counter, int best[]);
+void BestProfit(int *numbers, int length, int *bestProfit);
 
 int main(){
 	int testNumb[] = {-1, 3, -9, 2, 2, -1, 2, -1, -5};
 	int best[] = {0,0,0};
-	BestProfit(testNumb, 0, best);
+	size_t length = sizeof(testNumb) / sizeof(testNumb[0]);
+
+	BestProfit(testNumb, length, best);
 	return 0;
 }
 
-void BestProfit(int numbers[], int counte, int best[]){
-	size_t length = sizeof(numbers); 
-	printf("%zu", length);
+void BestProfit(int *numbers, int length, int *bestProfit){
+	printf("%d", length);
 }
