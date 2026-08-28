@@ -54,3 +54,13 @@ Vi prøver å regne tidskompleksitet til algoritmen. Vi trenger ikke å se på n
 > Vi får et tidskompleksistet på $O(n^2)$
 
 Algoritmen inneholder ikke et brudd (`break`) i algoritmen. All arbeidet gjøres uansett.
+
+# Bekreftelse gjennom testing
+
+| n | Tid (s) |
+| --------| -------- |
+| 1000    | Data A   |    
+| 2000    | Data A   |    
+| 4000    | Data A   |    
+| 8000    | Data A   |    
+| 16000   | Data A   |    
