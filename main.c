@@ -24,11 +24,11 @@ int main(){
 void BestProfit(int *numbers, int length){
 	printf("%d\n", length);
 	int Best[] = {0,0,0}; // BuyDay, SellDay, ProfitDifferance
-	for (int i = 0; i <= length; i++){
+	for (int i = 0; i < length; i++){
 		// Note that every print will print out the index+1, accordance to Tabell 1.1
 		printf("Trying Day %d.\n", i+1);
 		int profitBase = 0;
-		for ( int j = i+1; j <= length; j++){
+		for ( int j = i+1; j < length; j++){
 			profitBase += numbers[j];
 			printf("Buy: Day %d, Sell: Day %d, Profit so far: %d\n",i+1,j+1,profitBase); 
 			if (profitBase > Best[2]){
