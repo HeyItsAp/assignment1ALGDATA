@@ -59,8 +59,8 @@ Algoritmen inneholder ikke et brudd (`break`) i algoritmen. All arbeidet gjøres
 
 | n | Tid (s) |
 | --------| -------- |
-| 1000    | Data A   |    
-| 2000    | Data A   |    
-| 4000    | Data A   |    
-| 8000    | Data A   |    
-| 16000   | Data A   |    
+| 1000    | 0.000644   |    
+| 2000    | 0.002011   |    
+| 4000    | 0.006121   |    
+| 8000    | 0.023915   |    
+| 16000   | 0.402213 |    
