@@ -1,13 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define SIZE 100
 
 void BestProfit(int *numbers, int length);
 
 int main(){
 	int testNumb[] = {-1, 3, -9, 2, 2, -1, 2, -1, -5};
-	size_t length = sizeof(testNumb) / sizeof(testNumb[0]);
+	
+	// Create big array
+	int sanityArray[100];
+	srand(time(NULL));
+	for (int i = 0; i < SIZE; i++){
+		sanityArray[i] = (rand()%21) - 10;
+	}
+
+	size_t length = sizeof(sanityArray) / sizeof(sanityArray[0]);
 
 	BestProfit(testNumb, length);
-	return 0;
+	exit(0);
 }
 
 void BestProfit(int *numbers, int length){
