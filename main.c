@@ -18,7 +18,7 @@ void BestProfit(int *numbers, int length){
 		int profitBase = 0;
 		for ( int j = i+1; j <= length; j++){
 			profitBase += numbers[j];
-			printf("Buy: Day %d, Sell: Day %d, Profit so far: %d",i,j,profitBase); 
+			printf("Buy: Day %d, Sell: Day %d, Profit so far: %d\n",i,j,profitBase); 
 			if (profitBase > Best[2]){
 				Best[0] = i+1;
 				Best[1] = j+1;
@@ -26,7 +26,7 @@ void BestProfit(int *numbers, int length){
 			}
 		}
 	}
-	printf("Best so far: Buy on Day %d, Sell on Day %d and Profit will be, %d", Best[0], Best[1],  Best[2]); 
+	printf("Best so far: Buy on Day %d, Sell on Day %d and Profit will be, %d\n", Best[0], Best[1],  Best[2]); 
 
 
 }
